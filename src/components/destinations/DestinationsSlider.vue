@@ -4,10 +4,10 @@
             <v-col :cols="mdAndUp ? 6 : 12">
                 <div class="planets" id="planets">
                     <div :class="`planets__planet_image ${planetUpdated ? `planets__planet--active` : ``}`">
-                        <img src="@/assets/images/destination/image-moon.webp" alt="Moon" v-if="tab == 'Moon'" />
-                        <img src="@/assets/images/destination/image-mars.webp" alt="Mars" v-if="tab == 'Mars'" />
-                        <img src="@/assets/images/destination/image-europa.webp" alt="Europa" v-if="tab == 'Europa'" />
-                        <img src="@/assets/images/destination/image-titan.webp" alt="Titan" v-if="tab == 'Titan'" />
+                        <img src="@/assets/images//image-moon.webp" alt="Moon" v-if="tab == 'Moon'" />
+                        <img src="@/assets/images//image-mars.webp" alt="Mars" v-if="tab == 'Mars'" />
+                        <img src="@/assets/images//image-europa.webp" alt="Europa" v-if="tab == 'Europa'" />
+                        <img src="@/assets/images//image-titan.webp" alt="Titan" v-if="tab == 'Titan'" />
                     </div>
                 </div>
             </v-col>
