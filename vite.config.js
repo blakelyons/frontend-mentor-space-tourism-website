@@ -19,5 +19,8 @@ export default defineConfig({
     //         },
     //     },
     // },
+    build: {
+        assetsDir: "assets",
+    },
     base: "./", // Set Base URL Path
 });
