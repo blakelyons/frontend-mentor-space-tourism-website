@@ -1,0 +1,4 @@
+// Vuetify Variable Overrides
+@use "vuetify/settings" with (
+    $navigation-drawer-background: var(--main-nav-bg)
+);
