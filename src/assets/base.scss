@@ -180,44 +180,44 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--clr-black);
 
     &.space-background--earth {
-        background-image: url("./images/home/background-home-mobile.jpg");
+        background-image: url("./images/background-home-mobile.jpg");
 
         // Tablet Background Image
         @media screen and (min-width: 40em) and (max-width: 60em) {
-            background-image: url("./images/home/background-home-tablet.jpg");
+            background-image: url("./images/background-home-tablet.jpg");
         }
 
         // Desktop Background Image
         @media screen and (min-width: 60em) {
-            background-image: url("./images/home/background-home-desktop.jpg");
+            background-image: url("./images/background-home-desktop.jpg");
         }
     }
 
     &.space-background--moon {
-        background-image: url("./images/destination/background-destination-mobile.jpg");
+        background-image: url("./images/background-destination-mobile.jpg");
 
         // Tablet Background Image
         @media screen and (min-width: 40em) and (max-width: 60em) {
-            background-image: url("./images/destination/background-destination-tablet.jpg");
+            background-image: url("./images/background-destination-tablet.jpg");
         }
 
         // Desktop Background Image
         @media screen and (min-width: 60em) {
-            background-image: url("./images/destination/background-destination-desktop.jpg");
+            background-image: url("./images/background-destination-desktop.jpg");
         }
     }
 
     &.space-background--crew {
-        background-image: url("./images/crew/background-crew-mobile.jpg");
+        background-image: url("./images/background-crew-mobile.jpg");
 
         // Tablet Background Image
         @media screen and (min-width: 40em) and (max-width: 60em) {
-            background-image: url("./images/crew/background-crew-tablet.jpg");
+            background-image: url("./images/background-crew-tablet.jpg");
         }
 
         // Desktop Background Image
         @media screen and (min-width: 60em) {
-            background-image: url("./images/crew/background-crew-desktop.jpg");
+            background-image: url("./images/background-crew-desktop.jpg");
         }
     }
 }
