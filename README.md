@@ -50,9 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-I used this project to try out Vuetify. I learned about the Vuetify Framework, however I mostly just used the Grid layout Component. I wanted to see what the workflow was like while using Vue with Vuetify.
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I used this project to try out Vuetify. I learned about the Vuetify Framework, however I mostly just used the Grid layout Component. I wanted to see what the workflow was like while using Vue with Vuetify. Vite was also a little bit of a new territory for me. Especially dealing with the build process and handling of static images.
 
 ## Author
 
