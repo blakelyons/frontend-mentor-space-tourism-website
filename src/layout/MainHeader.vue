@@ -12,7 +12,7 @@
                 </v-col>
                 <Transition name="slide-fade">
                     <v-col cols="7" v-if="smAndUp" class="main-nav-container">
-                        <nav class="main-nav">
+                        <nav class="main-nav" id="main-nav">
                             <ul class="menu" data-nav>
                                 <template v-for="(item, index) in menuItems" :key="item.name">
                                     <li
@@ -20,7 +20,7 @@
                                             index == 1 && !mdAndUp ? `is-overflown` : ``
                                         }`"
                                     >
-                                        <RouterLink :to="item.path">
+                                        <RouterLink :to="item.path" :aria-label="item.name">
                                             <span>{{ item.id }}</span> {{ item.name }}
                                         </RouterLink>
                                     </li>
@@ -47,7 +47,11 @@
         <v-navigation-drawer class="mobile-nav" v-model="openMobielNavDrawer" temporary :border="false" location="right">
             <v-list-item>
                 <v-list-item-title class="mobile-nav-drawer-header">
-                    <button class="mobile-nav-close-trigger" @click.stop="openMobielNavDrawer = !openMobielNavDrawer">
+                    <button
+                        class="mobile-nav-close-trigger"
+                        @click.stop="openMobielNavDrawer = !openMobielNavDrawer"
+                        aria-label="Mobile Nav Button Trigger"
+                    >
                         <v-icon :icon="mdiClose" size="3rem" />
                     </button>
                 </v-list-item-title>
