@@ -12,6 +12,7 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
     },
+    assetsInclude: ["**/*.svg", "**/*.png", "**/*.jpg", "**/*.gif"],
     // css: {
     //     preprocessorOptions: {
     //         scss: {

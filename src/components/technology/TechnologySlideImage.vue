@@ -5,13 +5,13 @@
             v-if="slideIndex === slideImage.index && props.position === 'top'"
             :data-position="props.position"
         >
-            <img :src="slideImage.image_landscape" :alt="slideImage.title" v-if="slideIndex === slideImage.index" />
+            <img :src="getImageUrl(slideImage.image_landscape)" :alt="slideImage.title" v-if="slideIndex === slideImage.index" />
         </div>
         <div
             class="technology-slideshow__slide-image technology-slideshow__slide-image--desktop"
             v-if="slideIndex === slideImage.index && props.position === 'bottom'"
         >
-            <img :src="slideImage.image_portrait" :alt="slideImage.title" />
+            <img :src="getImageUrl(slideImage.image_portrait)" :alt="slideImage.title" />
         </div>
     </template>
 </template>
@@ -33,6 +33,10 @@ const props = defineProps({
         required: true,
     },
 });
+
+function getImageUrl(name) {
+    return new URL(`../../assets/images/${name}.jpg`, import.meta.url).href;
+}
 </script>
 
 <style scoped lang="scss">

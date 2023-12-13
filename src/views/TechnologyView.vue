@@ -19,7 +19,7 @@
 import {ref, onMounted} from "vue";
 import {useDisplay} from "vuetify";
 import TechnologySliderNavAndText from "@/components/technology/TechnologySliderNavAndText.vue";
-import TechnologySlideImage from "../components/technology/TechnologySlideImage.vue";
+import TechnologySlideImage from "@/components/technology/TechnologySlideImage.vue";
 
 const mounted = ref(false);
 const {lgAndUp} = useDisplay();
@@ -31,22 +31,22 @@ const slides = [
         index: 1,
         title: "Launch Vehicle",
         text: `A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`,
-        image_portrait: "src/assets/images/image-launch-vehicle-portrait.jpg",
-        image_landscape: "src/assets/images/image-launch-vehicle-landscape.jpg",
+        image_portrait: "image-launch-vehicle-portrait",
+        image_landscape: "image-launch-vehicle-landscape",
     },
     {
         index: 2,
         title: "Spaceport",
         text: `A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`,
-        image_portrait: "src/assets/images/image-spaceport-portrait.jpg",
-        image_landscape: "src/assets/images/image-spaceport-landscape.jpg",
+        image_portrait: "image-spaceport-portrait",
+        image_landscape: "image-spaceport-landscape",
     },
     {
         index: 3,
         title: "Space Capsule",
         text: `A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`,
-        image_portrait: "src/assets/images/image-space-capsule-portrait.jpg",
-        image_landscape: "src/assets/images/image-space-capsule-landscape.jpg",
+        image_portrait: "image-space-capsule-portrait",
+        image_landscape: "image-space-capsule-landscape",
     },
 ];
 
