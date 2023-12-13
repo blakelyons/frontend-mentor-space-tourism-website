@@ -29,7 +29,7 @@
         <div class="crew-member-image">
             <template v-for="(crewMember, i) in crew" :key="i">
                 <Transition :name="mdAndUp ? `fade` : ``">
-                    <img :src="crewMember.image" :alt="crewMember.name" v-if="crewMemberModel === crewMember.id" />
+                    <img :src="getImageUrl(crewMember.image)" :alt="crewMember.name" v-if="crewMemberModel === crewMember.id" />
                 </Transition>
             </template>
         </div>
@@ -51,30 +51,34 @@ const crew = ref([
         name: "Douglas Hurley",
         title: "Commander",
         bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
-        image: "../src/assets/images/image-douglas-hurley.webp",
+        image: "image-douglas-hurley",
     },
     {
         id: 2,
         name: "Mark Shuttleworth",
         title: "Mission Specalist",
         bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
-        image: "../src/assets/images/image-mark-shuttleworth.webp",
+        image: "image-mark-shuttleworth",
     },
     {
         id: 3,
         name: "Victor Glover",
         title: "Pilot",
         bio: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ",
-        image: "../src/assets/images/image-victor-glover.webp",
+        image: "image-victor-glover",
     },
     {
         id: 4,
         name: "Anousheh Ansari",
         title: "Flight Engineer",
         bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
-        image: "../src/assets/images/image-anousheh-ansari.webp",
+        image: "image-anousheh-ansari",
     },
 ]);
+
+function getImageUrl(name) {
+    return new URL(`../../assets/images/${name}.webp`, import.meta.url).href;
+}
 </script>
 
 <style scoped lang="scss">
